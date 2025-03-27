@@ -1,0 +1,101 @@
+/* Quiz-specific styles */
+.quiz-container {
+    padding: 6rem 2rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    min-height: calc(100vh - 60px);
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #eee;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.progress {
+    width: 0%;
+    height: 100%;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.quiz-screen {
+    display: none;
+    text-align: center;
+}
+
+.quiz-screen.active {
+    display: block;
+}
+
+.quiz-content {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.option-card {
+    background-color: var(--light-bg);
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.option-card:hover {
+    transform: translateY(-2px);
+    background-color: #e8f0fe;
+}
+
+.option-card.selected {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.quiz-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+#results-container {
+    margin: 2rem 0;
+}
+
+.career-match {
+    background-color: var(--light-bg);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.career-match h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.match-percentage {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    margin-left: 0.5rem;
+}
+
+.career-description {
+    margin: 1rem 0;
+    color: #666;
+}

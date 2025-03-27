@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Quiz - Career Pathway Guide</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/quiz.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">Career Pathway Guide</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#explore">Explore Careers</a></li>
+                <li><a href="#resources">Resources</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="quiz-container">
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+
+        <div class="quiz-content">
+            <div id="welcome-screen" class="quiz-screen active">
+                <h1>Career Discovery Quiz</h1>
+                <p>Discover your ideal career path through this interactive quiz. We'll analyze your interests, skills, and preferences to suggest the best career options for you.</p>
+                <button type="button" id="start-quiz" class="primary-button">Start Quiz</button>
+            </div>
+
+            <div id="question-screen" class="quiz-screen">
+                <h2 id="question-text">Loading question...</h2>
+                <div id="options-container" class="options-grid"></div>
+                <div class="quiz-navigation">
+                    <button type="button" id="prev-btn" class="secondary-button">Previous</button>
+                    <button type="button" id="next-btn" class="primary-button">Next</button>
+                </div>
+            </div>
+
+            <div id="results-screen" class="quiz-screen">
+                <h2>Your Career Match Results</h2>
+                <div id="results-container"></div>
+                <button type="button" id="view-details" class="primary-button">View Career Pathways</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Career Pathway Guide. All rights reserved.</p>
+    </footer>
+
+    <script src="js/quiz-data.js"></script>
+    <script src="js/quiz.js"></script>
+</body>
+</html>
